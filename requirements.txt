@@ -1,0 +1,12 @@
+pandas
+numpy
+ruamel.yaml
+pandera
+
+
+#DMS Column Names
+# Fields
+# DataType
+# Required Field
+# Static Value
+

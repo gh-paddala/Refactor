@@ -1,0 +1,318 @@
+schema_type: dataframe
+version: 0.7.0
+columns:
+  Sample ID:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+  Vendor:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: Guardant Health (Redwood City USA)
+  Study Number:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: MS200095-0031
+  Subject ID:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+  Secondary Subject ID:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Vendor Sample ID:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+  Current Location:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: Guardant Health (Redwood City USA)
+  Subject Group:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Site Number:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+  Visit:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: EOT
+  Timepoint:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Sample Type:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Assay Type:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: NGS
+  Sample Tracking Code:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Barcode:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Collection Date:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+  Collection Time:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+    checks:
+      eq: ''
+  Collection Method:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Container Type:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Volume:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Volume Unit:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Concentration:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Concentration Numerator Unit:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Concentration Denominator Unit:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Mass:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Mass Unit:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Thaws:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Sample Site:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Parent Vendor Sample ID:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Parent Sample ID:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Created By Facility:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: Guardant Health (Redwood City USA)
+  Created Date:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+  Created Time:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+    checks:
+      eq: ''
+  Creation Comment:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Number of Samples:
+    required: true
+    nullable: false
+    dtype: float
+    coerce: true
+    checks:
+      eq: 1
+  Shipping Facility:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Received Date:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+  Received Time:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+    checks:
+      eq: ''
+  Requisition Number:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+  Receiving Condition:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: Frozen
+  Receiving Comment:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+    checks:
+      eq: ''
+  Receiving Facility:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Shipped Date:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Shipped Time:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Carrier:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Tracking Number:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Manifest Number:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+  Shipping Comment:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Result (Y/N):
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Test Type:
+    required: true
+    nullable: false
+    dtype: str
+    coerce: true
+    checks:
+      eq: G360_2_11
+  Test Date:
+    required: true
+    nullable: true
+    dtype: datetime
+    coerce: true
+  Test Comment:
+    required: true
+    nullable: true
+    dtype: str
+    coerce: true
+  Final Disposition:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Final Disposition Date:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
+  Final Disposition Comment:
+    required: true
+    nullable: true
+    checks:
+      eq: ''
