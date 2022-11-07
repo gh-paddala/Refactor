@@ -14,3 +14,4 @@ dms = pd.read_excel(datampsheet,sheet_name=datamapSheetName,skiprows=skipRowsofD
 
 test = TestCases(source,target,dms)
 test.commonTestCases()
+test.findDelimetter()

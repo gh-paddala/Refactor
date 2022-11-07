@@ -4,10 +4,13 @@ import pandas as pd
 from pandera import Check, DataFrameSchema, Column,check_io
 from utils.error import *
 from constants.constants import yamlFile
+from constants.constants import *
 
 from utils.enums import datatypes
 
 from ruamel.yaml import round_trip_dump  as yaml_dump
+
+import csv
 
 INDENTATION=2
 class TestCases:
@@ -64,3 +67,11 @@ class TestCases:
         except Exception as ex:
             printError("Unknown Error:")
             printError(f" {str(ex)}")
+
+#Finding the delimetter used
+    def findDelimetter(self):
+        with open(devRepLoc) as csvfile:
+            sniffer = csv.Sniffer()
+            dialect = sniffer.sniff(csvfile.read())
+            print('Hey there')
+            print(dialect.delimiter)
